@@ -1,0 +1,19 @@
+<div class="price-table">
+  <h3 class="mb-3">Precios</h3>
+  <div class="table-container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let price of prices">
+          <td>{{ price.date | date }}</td>
+          <td>{{ price.close | number:'1.2-2' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
