@@ -1,0 +1,15 @@
+<div class="container-fluid app-container">
+  <div class="row h-100">
+    <div class="col-3 sidebar">
+      <app-symbol-list (symbolSelected)="onSymbolSelected($event)"></app-symbol-list>
+    </div>
+    <div class="col-9 main-content">
+      <div class="price-table-section">
+        <app-price-table [symbol]="selectedSymbol"></app-price-table>
+      </div>
+      <div class="price-chart-section">
+        <app-price-chart [symbol]="selectedSymbol"></app-price-chart>
+      </div>
+    </div>
+  </div>
+</div>

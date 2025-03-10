@@ -1,0 +1,9 @@
+<div class="symbol-list h-100">
+  <h3 class="mb-3">Símbolos</h3>
+  <div class="list-group">
+    <button *ngFor="let symbol of symbols" class="list-group-item list-group-item-action"
+      [class.active]="symbol.symbol === selectedSymbol" (click)="onSelectSymbol(symbol.symbol)">
+      {{ symbol.symbol }} - {{ symbol.name }}
+    </button>
+  </div>
+</div>
